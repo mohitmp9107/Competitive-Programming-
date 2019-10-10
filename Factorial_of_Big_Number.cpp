@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
-
+#define ll long long int
+#define itr vector<ll>::iterator
 // Maximum number of digits in output
 #define MAX 500
 
