@@ -31,7 +31,7 @@ int  modExp(int a, int b, int c)
     return (int)(ans+c)%c;
 }
 // Modular Exponentiation Iteratively
-int ModExp(int a,unsigned int b, int c)
+ll ModExp(ll a,ll b,ll c)
 {
     a=a%c;
     ll ans=1;
@@ -41,16 +41,11 @@ int ModExp(int a,unsigned int b, int c)
         }
         b=b>>1; a=(a*a)%c;
     }
-    return (int)ans;
+    return ans;
 }
 int main()
 {
-    // int x,n; cin >> x >> n;
-    // if(x==0){
-    //     cout << 0 << endl;
-    // } else{
-    //    cout << pow(x,n)<< endl;
-    // }
+
     int a,b, c; cin >> a >> b >> c;
     cout << ModExp(a,b,c)<< endl;
 }
